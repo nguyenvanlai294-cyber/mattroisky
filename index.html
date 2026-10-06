@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mattroisky - Trang chủ</title>
+    <!-- Nhúng Font Awesome lấy icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #ffffff;
+            color: #222222;
+            line-height: 1.5;
+        }
+
+        /* Header */
+        .site-header {
+            width: 100%;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 12px 15px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            max-width: 680px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .menu-search-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #4f4f4f;
+            font-size: 18px;
+        }
+
+        .logo-container {
+            text-align: center;
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: 800;
+            text-decoration: none;
+            color: #222222;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .logo-highlight {
+            background-color: #9f224e;
+            color: #ffffff;
+            padding: 1px 5px;
+            margin-left: 2px;
+            border-radius: 2px;
+        }
+
+        .tagline {
+            font-size: 11px;
+            color: #666666;
+            margin-top: 2px;
+        }
+
+        .header-right-spacer {
+            width: 32px;
+        }
+
+        /* Danh sách bài viết trang chủ */
+        .news-feed {
+            max-width: 680px;
+            margin: 15px auto;
+            padding: 0 15px;
+        }
+
+        .news-item {
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .news-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        /* Tiêu đề tin tức */
+        .news-title {
+            font-size: 20px;
+            line-height: 1.35;
+            font-weight: 700;
+            color: #222222;
+            margin-bottom: 8px;
+        }
+
+        .news-link:hover .news-title {
+            color: #9f224e;
+        }
+
+        /* Mô tả ngắn (Sapo) */
+        .news-excerpt {
+            font-size: 15px;
+            line-height: 1.5;
+            color: #4f4f4f;
+            margin-bottom: 12px;
+        }
+
+        .news-excerpt strong {
+            color: #222222;
+            text-transform: uppercase;
+        }
+
+        /* Hình ảnh tóm tắt */
+        .news-image {
+            width: 100%;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .news-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header giao diện báo -->
+    <header class="site-header">
+        <div class="header-container">
+            <button class="menu-search-btn">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <div class="logo-container">
+                <a href="index.html" class="logo-text">
+                    mattroi<span class="logo-highlight">sky</span>
+                </a>
+                <p class="tagline">tin tức - hàng không-địa điểm hot </p>
+            </div>
+
+            <div class="header-right-spacer"></div>
+        </div>
+    </header>
+
+    <!-- Danh sách bài viết -->
+    <main class="news-feed">
+
+        <!-- Khối bài viết ngắn: Bấm vào đâu trong khối này cũng sẽ mở bài bai-viet-a330.html -->
+        <article class="news-item">
+     <!-- Sửa lại đúng tên file a330.html mà bạn đang lưu trong app -->
+<a href="a330.html" class="news-link">
+ 
+                <h2 class="news-title">
+                    Chiếc A330 thân rộng SPA của Sun Phú Quốc đầu tiên cất cánh tại sân bay Tân Sơn Nhất, bay đến Nội Bài
+                </h2>
+
+                <p class="news-excerpt">
+                    <strong>TÂN SƠN NHẤT</strong> — Chuyến bay đầu tiên mà hãng Sun Phú Quốc sử dụng chiếc A330 này làm chiếc thân rộng đầu tiên trên thế giới.
+                </p>
+
+                <div class="news-image">
+                    <img src="https://i.postimg.cc/Fk90wGTD/IMG-2424.jpg" alt="A330 Sun Phú Quốc">
+                </div>
+            </a>
+<a href="a380.html" class="news-card" style="text-decoration: none; color: inherit; display: block;">
+    <h2 class="news-title" style="color: #111111; font-size: 18px; font-weight: 800; line-height: 1.35; margin-bottom: 8px;">
+        Airbus A380 vừa rời Đức đi London phải quay đầu khẩn cấp do sự cố y tế trên không
+    </h2>
+    <p class="news-sapo" style="font-size: 14.5px; color: #555555; line-height: 1.5; margin-bottom: 12px;">
+        <span class="news-location" style="font-weight: 800; color: #111111; text-transform: uppercase;">ĐỨC</span> — Một chiếc siêu máy bay Airbus A380 đang trên hành trình từ Đức đến Thủ đô London (Vương quốc Anh) đã phải phát tín hiệu khẩn cấp và quay đầu hạ cánh xuống sân bay xuất phát do sự cố y tế đột xuất.
+    </p>
+    <div class="news-image">
+        <img src="https://i.postimg.cc/QBCxtzMq/IMG-2403.jpg" alt="Airbus A380 khẩn cấp" style="width: 100%; height: auto; border-radius: 6px; display: block;">
+    </div>
+</a>
+<a href="a350.html" class="news-card" style="text-decoration: none; color: inherit; display: block; border-bottom: 1px solid #f0f0f0; padding-bottom: 20px; margin-bottom: 20px;">
+    <h2 class="news-title" style="color: #111111; font-size: 18px; font-weight: 800; line-height: 1.35; margin-bottom: 8px;">
+        Việt Nam Airlines Ký Hợp Đồng Mua 80 Máy Bay Airbus A350-900 Sau Chuyến Công Du Của Tổng Bí Thư Tô Lâm
+    </h2>
+    <p class="news-sapo" style="font-size: 14.5px; color: #555555; line-height: 1.5; margin-bottom: 12px;">
+        <span class="news-location" style="font-weight: 800; color: #111111; text-transform: uppercase;">VIỆT NAM AIRLINES</span> — Chính thức ký kết hợp đồng đặt mua 80 tàu bay Airbus A350-900 hiện đại ngay sau chuyến công du nước ngoài của Tổng Bí thư Tô Lâm, đánh dấu bước phát triển vượt bậc.
+    </p>
+    <div class="news-image">
+        <img src="https://i.postimg.cc/k6dSb9tW/IMG-2470.jpg" alt="A350 Vietnam Airlines" style="width: 100%; height: auto; border-radius: 6px; display: block;">
+    </div>
+</a>
+<a href="uyen-tran.html" class="news-card" style="text-decoration: none; color: inherit; display: block; border-bottom: 1px solid #f0f0f0; padding-bottom: 20px; margin-bottom: 20px;">
+    <h2 class="news-title" style="color: #111111; font-size: 18px; font-weight: 800; line-height: 1.35; margin-bottom: 8px;">
+        Mối Duyên Kỳ Lạ Của Người Phụ Nữ Sinh Năm 1978 Uyên Trần: Sang Mỹ Kết Hôn Với Cựu Binh Sau 25 Năm Chồng Mất
+    </h2>
+    <p class="news-sapo" style="font-size: 14.5px; color: #555555; line-height: 1.5; margin-bottom: 12px;">
+        <span class="news-location" style="font-weight: 800; color: #111111; text-transform: uppercase;">UYÊN TRẦN</span> — Sau 25 năm lẻ bóng kể từ ngày người chồng đầu tiên qua đời, người phụ nữ sinh năm 1978 quyết định gác lại tổn thương quá khứ để sang Mỹ kết hôn cùng cựu binh từng tham chiến tại Việt Nam.
+    </p>
+    <div class="news-image">
+        <img src="https://i.postimg.cc/VdBzfwzT/IMG-2473.jpg" alt="Chị Uyên Trần" style="width: 100%; height: auto; border-radius: 6px; display: block;">
+    </div>
+</a>
+<a href="bamboo.html" class="news-card" style="text-decoration: none; color: inherit; display: block; border-bottom: 1px solid #f0f0f0; padding-bottom: 20px; margin-bottom: 20px;">
+    <h2 class="news-title" style="color: #111111; font-size: 18px; font-weight: 800; line-height: 1.35; margin-bottom: 8px;">
+        Bamboo Airways và bài học đắt giá: Từ khát vọng "vươn tầm thế giới" đến khủng hoảng sinh tồn
+    </h2>
+    <p class="news-sapo" style="font-size: 14.5px; color: #555555; line-height: 1.5; margin-bottom: 12px;">
+        <span class="news-location" style="font-weight: 800; color: #111111; text-transform: uppercase;">BAMBOO AIRWAYS</span> — Hãng hàng không từng được ví như "chú tre xanh" đang trải qua giai đoạn khủng hoảng tài chính trầm trọng, thu hẹp tối đa quy mô hoạt động để duy trì sự sống.
+    </p>
+    <div class="news-image">
+        <img src="https://i.postimg.cc/R31dQYsz/IMG-2475.jpg" alt="Bamboo Airways" style="width: 100%; height: auto; border-radius: 6px; display: block;">
+    </div>
+</a>
+<a href="dong-gia.html" class="news-card" style="text-decoration: none; color: inherit; display: block; border-bottom: 1px solid #f0f0f0; padding-bottom: 20px; margin-bottom: 20px;">
+    <h2 class="news-title" style="color: #111111; font-size: 18px; font-weight: 800; line-height: 1.35; margin-bottom: 8px;">
+        Khám phá ngay điểm ngắm máy bay đỉnh nhất Hà Nội tại thôn Đồng Giá, xã Nội Bài
+    </h2>
+    <p class="news-sapo" style="font-size: 14.5px; color: #555555; line-height: 1.5; margin-bottom: 12px;">
+        <span class="news-location" style="font-weight: 800; color: #111111; text-transform: uppercase;">NỘI BÀI</span> — Tọa độ bí mật mà idol TikTok đã miệt mài ghé thăm suốt nhiều năm qua để săn trọn những khoảnh khắc máy bay cất hạ cánh cự ly siêu gần cực kỳ mãn nhãn.
+    </p>
+    <div class="news-image">
+        <img src="https://i.postimg.cc/zVhrW9HW/IMG-2480.jpg" alt="Điểm ngắm máy bay Đồng Giá" style="width: 100%; height: auto; border-radius: 6px; display: block;">
+    </div>
+</a>
+<a href="dien-xa.html" class="news-card" style="text-decoration: none; color: inherit; display: block; border-bottom: 1px solid #f0f0f0; padding-bottom: 20px; margin-bottom: 20px;">
+    <h2 class="news-title" style="color: #111111; font-size: 18px; font-weight: 800; line-height: 1.35; margin-bottom: 8px;">
+        Khám phá ngay Cổng làng Điền Xá — tọa độ ngắm máy bay hot nhất hiện nay sát Nhà ga T2 Nội Bài
+    </h2>
+    <p class="news-sapo" style="font-size: 14.5px; color: #555555; line-height: 1.5; margin-bottom: 12px;">
+        <span class="news-location" style="font-weight: 800; color: #111111; text-transform: uppercase;">NỘI BÀI</span> — Tận hưởng trải nghiệm cực chill bên ruộng lúa xanh mát, ngắm nhìn những siêu phi cơ cất hạ cánh ở cự ly siêu gần ngay trên đỉnh đầu.
+    </p>
+    <div class="news-image">
+        <img src="https://i.postimg.cc/mhXYMnWW/IMG-2481.jpg" alt="Cổng làng Điền Xá" style="width: 100%; height: auto; border-radius: 6px; display: block;">
+    </div>
+</a>
+<a href="vuong-van-dung.html" class="news-card" style="text-decoration: none; color: inherit; display: block; border-bottom: 1px solid #f0f0f0; padding-bottom: 20px; margin-bottom: 20px;">
+    <h2 class="news-title" style="color: #111111; font-size: 18px; font-weight: 800; line-height: 1.35; margin-bottom: 8px;">
+        Sự thật về chàng TikToker nổi tiếng chuyên săn máy bay: Vương Văn Dũng
+    </h2>
+    <p class="news-sapo" style="font-size: 14.5px; color: #555555; line-height: 1.5; margin-bottom: 12px;">
+        <span class="news-location" style="font-weight: 800; color: #111111; text-transform: uppercase;">NHÂN VẬT</span> — Bức màn danh tính đằng sau chàng "phóng viên bầu trời" triệu view chuyên đón những siêu quái vật thân rộng chính thức được vén lên.
+    </p>
+    <div class="news-image">
+        <img src="https://i.postimg.cc/G80pvFT2/IMG-2485.png" alt="Vương Văn Dũng" style="width: 100%; height: auto; border-radius: 6px; display: block;">
+    </div>
+</a>
+<a href="chu-bao-sky.html" class="news-card" style="text-decoration: none; color: inherit; display: block; border-bottom: 1px solid #f0f0f0; padding-bottom: 20px; margin-bottom: 20px;">
+    <h2 class="news-title" style="color: #111111; font-size: 18px; font-weight: 800; line-height: 1.35; margin-bottom: 8px;">
+        Vương Văn Dũng – Chủ Báo Sky Và Hành Trình Giữ Lửa Nghề Mây Tre Đan Phú Vinh
+    </h2>
+    <p class="news-sapo" style="font-size: 14.5px; color: #555555; line-height: 1.5; margin-bottom: 12px;">
+        <span class="news-location" style="font-weight: 800; color: #800020; text-transform: uppercase;">NHÂN VẬT</span> — Từ một thanh niên trải qua nhiều thăng trầm làm phụ xe, ước mơ phi công, Vương Văn Dũng đã tìm thấy bến đỗ bình yên nơi làng nghề mây tre đan Phú Vinh.
+    </p>
+    <div class="news-image">
+        <img src="https://i.postimg.cc/GHJzVRkW/IMG-2487.jpg" alt="Vương Văn Dũng" style="width: 100%; height: auto; border-radius: 6px; display: block;">
+    </div>
+</a>
+<!-- Thẻ tin Vietravel Airlines mua 50 máy bay -->
+<a href="viettravel.html" class="news-card" style="text-decoration: none; color: inherit; display: block; border-bottom: 1px solid #f0f0f0; padding-bottom: 20px; margin-bottom: 20px;">
+    <h2 class="news-title" style="color: #111111; font-size: 18px; font-weight: 800; line-height: 1.35; margin-bottom: 8px;">
+        Vietravel Airlines mua thêm 50 máy bay A321-200
+    </h2>
+    <p class="news-sapo" style="font-size: 14.5px; color: #555555; line-height: 1.5; margin-bottom: 12px;">
+        <span class="news-location" style="font-weight: 800; color: #800020; text-transform: uppercase;">HÀNG KHÔNG</span> — Thỏa thuận chiến lược giúp nâng cao năng lực vận chuyển, đáp ứng nhu cầu du lịch nội địa và quốc tế đang tăng trưởng mạnh mẽ.
+    </p>
+    <div class="news-image-preview" style="position: relative; width: 100%; border-radius: 6px; overflow: hidden;">
+        <img src="https://i.postimg.cc/dLzxjjc4/IMG-2545.jpg" alt="Vietravel Airlines A321-200" style="width: 100%; height: auto; display: block; border-radius: 6px;">
+    </div>
+</a>
+
+        </article>
+
+    </main>
+
+</body>
+</html>
